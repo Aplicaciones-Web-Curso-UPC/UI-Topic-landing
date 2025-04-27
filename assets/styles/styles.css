@@ -181,6 +181,76 @@ html {
     opacity: 0.8;
   }
   
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+  }
+  
+  .about-us-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #3C3C3C;
+    text-align: center;
+  }
+  
+  .about-us-cards h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #3C3C3C;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .about-us-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 0 60px;
+  }
+  
+  .about-us p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .about-us-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .about-us-cards .card {
+    flex: 0 1 355px;
+    border: 2px solid #4F8A5B;
+    border-radius: 17px;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    max-width: 355px;
+    max-height: 370px;
+  }
+  
+  .about-us-cards .card img {
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .about-us-cards .card:hover {
+    transform: translateY(-5px);
+  }
+  
   @media (max-width: 1120px) and (min-width: 880px) {
     .hero {
       padding: 60px 40px;
