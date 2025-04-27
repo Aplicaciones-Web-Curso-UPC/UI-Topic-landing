@@ -31,6 +31,7 @@
 
     <link rel="stylesheet" href="assets/styles/styles.css" />
     <link rel="stylesheet" href="assets/styles/testimonios.css" />
+    <link rel="stylesheet" href="assets/styles/preguntas-frecuentes.css" />
     <link rel="stylesheet" href="assets/styles/benefits.css" />
 
 </head>
@@ -257,9 +258,52 @@
                 </div>
             </div>
         </section>
+
+        <section id="preguntas" class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+            <p class="subtitle">Foro de preguntas frecuentes</p>
+
+            <div class="faq-grid">
+                <div class="faq-box">
+                    <div class="flex-desplegable" onclick="toggleFaq(this)">
+                        <h3>¿Qué es Restock?</h3>
+                        <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
+                    </div>
+                    <p class="respuesta">Restock es una plataforma que simplifica la operación gastronómica conectando
+                        restaurantes y proveedores, optimizando el inventario y mejorando la eficiencia en cada pedido.
+                    </p>
+                </div>
+                <div class="faq-box">
+                    <div class="flex-desplegable" onclick="toggleFaq(this)">
+                        <h3>¿Cuánto cuesta Restock?</h3>
+                        <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
+                    </div>
+                    <p class="respuesta">En Restock, todos nuestros planes te ofrecen los mismos beneficios premium.
+                        Puedes
+                        suscribirte por más tiempo y acceder a descuentos exclusivos. Elige entre plan mensual,
+                        semestral o anual,
+                        ¡y optimiza tu operación desde el primer día!</p>
+                </div>
+                <div class="faq-box full-width">
+                    <div class="flex-desplegable" onclick="toggleFaq(this)">
+                        <h3>¿Cómo funciona Restock?</h3>
+                        <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
+                    </div>
+                    <p class="respuesta">Restock permite gestionar inventarios, conectando restaurantes con proveedores
+                        de forma
+                        rápida y eficiente. ¡Así simplificamos todo el proceso!</p>
+                </div>
+            </div>
+
+
+            <div class="btn-more">
+                <button>VER MÁS</button>
+            </div>
+        </section>
     </main>
 
     <script src="assets/scripts/main.js" defer></script>
+    <script src="assets/scripts/desplegable-preguntas.js" defer></script>
 
 
 </body>
