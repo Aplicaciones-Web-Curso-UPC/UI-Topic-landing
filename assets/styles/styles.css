@@ -613,7 +613,7 @@ html {
     }
   }
 
-  .about-us-subtitle {
+.about-us-subtitle {
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -622,41 +622,91 @@ html {
 }
 
 .about-us-team {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
 }
 
 .team-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 160px;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
+  width: 300px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .team-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
-.team-card img {
-  width: 120px;
-  height: 120px;
+.profile-image img {
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 0.75rem;
   border: 2px solid #ccc;
+  margin-bottom: 1rem;
 }
 
 .team-name {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
   text-align: center;
-  color: #444;
+  margin-bottom: 0.25rem;
+}
+
+.team-role {
+  font-size: 0.5rem;
+  color: #666;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.team-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.team-socials a {
+  background-color: #eee;
+  color: #333;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.team-socials a:hover {
+  background-color: #4F8A5B;
+  color: #fff;
+}
+
+.about-us-team-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.center-row {
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .about-us-team {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
