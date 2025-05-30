@@ -251,6 +251,10 @@ html {
     transform: translateY(-5px);
   }
   
+.about-us-video {
+  margin-top: 5rem;
+}
+
   @media (max-width: 1120px) and (min-width: 880px) {
     .hero {
       padding: 60px 40px;
