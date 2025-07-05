@@ -77,7 +77,11 @@ const translations = {
         jahaziel: "Jahaziel Guerra",
         williams: "Williams Avendaño",
         yaku: "Yaku Guzmán"
+      },
+      video: {
+        title: "About the Team"
       }
+
     },
     benefits: {
       title: 'Benefits',
@@ -279,7 +283,9 @@ const translations = {
         williams: "Williams Avendaño",
         yaku: "Yaku Guzmán"
       },
-      
+      video: {
+        title: "Sobre el Equipo"
+      }
     },
     benefits: {
       title: 'Beneficios',
